@@ -1,5 +1,5 @@
 name: Deployments
-run-name: ${{ github.actor }} is a bad ass mofo 🚀
+run-name: ${{ github.actor }} deploys... 🚀
 on: [push]
 jobs:
   deploy:
