@@ -1,0 +1,16 @@
+{
+  "name": "lerna-example",
+  "version": "1.0.0",
+  "repository": "git@github.com:jpwesselink/lerna-example.git",
+  "author": "JP Wesselink <jpwesselink@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.6.2",
+    "rome": "^10.0.1"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

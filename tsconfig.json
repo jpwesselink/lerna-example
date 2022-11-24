@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": false,
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "module": "esnext", // TypeScript is not used for building, allow all modern features
+        "moduleResolution": "node",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext", // TypeScript is not used for building, allow all modern features
+        "incremental": true,
+        "paths": {
+            "@apps/*": [
+                "apps/*"
+            ],
+            "@packages/*": [
+                "packages/*"
+            ]
+        }
+    },
+    "include": [
+        "./**/*",
+        "./**/.*"
+    ],
+    "exclude": [
+        "./**/**/build",
+        "./**/**/dist",
+        "./**/**/cdk.out",
+        "node_modules",
+        "infra/pathe-home/src/data/*.ts",
+        ".tmp/**/*.ts"
+    ]
+}

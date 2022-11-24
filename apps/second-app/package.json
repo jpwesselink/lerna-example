@@ -1,0 +1,21 @@
+{
+    "name": "@apps/second-app",
+    "private": true,
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "scripts": {
+        "build": "tsup",
+        "deploy": "echo 'deploy second-app'",
+        "dev": "tsup --watch",
+        "start": "node ./src/index.js"
+    },
+    "dependencies": {
+        "@packages/common": "*",
+        "@packages/come-again": "*"
+    },
+    "devDependencies": {
+        "tsup": "^6.5.0"
+    }
+}

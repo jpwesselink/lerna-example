@@ -1,0 +1,20 @@
+name: Deployments
+run-name: ${{ github.actor }} is a bad ass mofo 🚀
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm i
+      - run: yarn lerna run --stream --since HEAD~1 --include-dependencies --no-bail build
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+
+

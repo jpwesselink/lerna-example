@@ -1,0 +1,20 @@
+{
+    "name": "@apps/first-app",
+    "private": true,
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "scripts": {
+        "build": "tsup",
+        "deploy": "echo 'deploy first-app'",
+        "dev": "tsup --watch",
+        "start": "node ./src/index.js"
+    },
+    "dependencies": {
+        "@packages/common": "*"
+    },
+    "devDependencies": {
+        "tsup": "^6.5.0"
+    }
+}
