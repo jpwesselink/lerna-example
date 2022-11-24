@@ -15,6 +15,7 @@ jobs:
           cache: 'npm'
       - run: npm i
       - run: yarn lerna run --stream --since HEAD~1 --include-dependencies --no-bail build
+      - run: yarn lerna run --stream --since HEAD~1 --include-dependencies --no-bail deploy
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
